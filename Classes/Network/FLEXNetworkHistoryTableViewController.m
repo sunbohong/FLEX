@@ -182,7 +182,7 @@
     
     if (self.searchController.isActive) {
         [self updateTransactions];
-        [self updateSearchResults:nil];
+        [self updateSearchResults:self.searchController.searchBar.text];
         return;
     }
 
